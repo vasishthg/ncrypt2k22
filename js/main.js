@@ -58,17 +58,17 @@ $(document).bind("contextmenu",function(e) {
   e.preventDefault();
 })
 
-window.oncontextmenu = function () {
-  return false;
-}
-$(document).keydown(function (event) {
-  if (event.keyCode == 123) {
-      return false;
-  }
-  else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
-      return false;
-  }
-});
+// window.oncontextmenu = function () {
+//   return false;
+// }
+// $(document).keydown(function (event) {
+//   if (event.keyCode == 123) {
+//       return false;
+//   }
+//   else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+//       return false;
+//   }
+// });
 
 $(".menyoo").click(function(){
   $("#sidenav").slideToggle();
@@ -106,3 +106,19 @@ $(".backevent").click(function(){
 })
 
 $(".navlinka").css("cursor", "pointer")
+
+$("#homesidebar").click(function(){
+  window.location.replace("/")
+})
+$("#eventssidebar").click(function(){
+  window.location.replace("/events")
+})
+$("#registersidebar").click(function(){
+  window.location.replace("/register")
+})
+$("#teamsidebar").click(function(){
+  window.location.replace("/team")
+})
+$("#dcryptsidebar").click(function(){
+  window.open("https://dcrypt.ml")
+})
