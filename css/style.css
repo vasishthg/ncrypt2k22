@@ -47,7 +47,7 @@ body{
   vertical-align: middle;
   font-size: 3em;
   font-family: 'Red Hat Display', sans-serif;
-  animation: ebbubcoof 1s 1;
+  animation: ebbubcoof 1s 1 ease-in-out;
   animation-fill-mode: forwards;
   cursor:default;
 }
@@ -64,7 +64,7 @@ body{
   }
 
   .ebbubc:hover{
-    animation: ebbubc 1s 1;
+    animation: ebbubc 1s 1 ease-in-out;
     animation-fill-mode: forwards;
   }
 
@@ -451,33 +451,30 @@ background-color: black;
 
 @keyframes circleiroof {
   0%{
-    border-radius: 20em;
-    margin-bottom: 1.5em;
+    filter: drop-shadow(0 0 0.9rem red);
   }
   100%{
-    border-radius: 1em;
-    margin-bottom: 0;
+    /* border-radius: 1em; */
   }
 }
 
 .dir-img{
   max-width: 30em;
   border-radius: 1em;
-  animation: circleiroof 0.5s 1;
+  animation: circleiroof 0.2s 1;
   animation-fill-mode: forwards;
 }
 .dir-img:hover{
-  animation: circleir 0.5s 1;
+  animation: circleir 0.2s 1 ease-in-out;
   animation-fill-mode: forwards;
 }
 
 @keyframes circleir {
   0%{
-    border-radius: 1em;
+    
   }
   100%{
-    border-radius: 20em;
-    margin-bottom: 1.5em;
+    filter: drop-shadow(0 0 0.9rem red);
   }
 }
 
@@ -967,5 +964,10 @@ div.logo1 div.red {
 @media screen and (max-width: 552px) {
   .bigteamimg{
     max-width: 40em;
+  }
+}
+@media screen and (max-width:540px){
+  .nav-socials{
+    margin-right:-6em;
   }
 }
