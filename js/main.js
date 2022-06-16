@@ -54,13 +54,13 @@ function off(){
 // cursor pointer
 $(".pointer").css("cursor", "pointer")
 
-// $(document).bind("contextmenu",function(e) {
-//   e.preventDefault();
-// })
+$(document).bind("contextmenu",function(e) {
+  e.preventDefault();
+})
 
-window.oncontextmenu = function () {
-  return false;
-}
+// window.oncontextmenu = function () {
+//   return false;
+// }
 $(document).keydown(function (event) {
   if (event.keyCode == 123) {
       return false;
