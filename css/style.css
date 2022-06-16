@@ -373,15 +373,20 @@ font-size: 0.8em;
   font-size: 2.4em;
   font-weight: 100;
 }
-
+.teambig{
+  margin-top: 30em;
+}
 .bigteamimgleft{
   max-width: 50em;
   float: left;
   margin-left: 2.7em;
+  animation: circleiroof 0.3s 1;
+  animation-fill-mode: forwards;
 }
 
 .bigteamimgleft:hover{
-  transform: rotate(0.01turn);
+  animation: circleir 0.3s 1;
+  animation-fill-mode: forwards;
 }
 
 .bigteamimgright{
@@ -389,10 +394,14 @@ font-size: 0.8em;
   float: right;
   display: flex;
   margin-right: -8em;
+  
+  animation: circleiroof 0.3s 1;
+  animation-fill-mode: forwards;
 }
 
 .bigteamimgright:hover{
-  transform: rotate(-0.01turn);
+  animation: circleir 0.3s 1;
+  animation-fill-mode: forwards;
 }
 
 #dirh{
@@ -967,5 +976,10 @@ div.logo1 div.red {
 @media screen and (max-width: 383px) {
   .eventbtn2{
     margin-left: 0;
+  }
+}
+@media screen and (max-width:1464px){
+  .bigteamimgright{
+    margin-right: 1em;
   }
 }
