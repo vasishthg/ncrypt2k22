@@ -52,35 +52,6 @@ body{
   cursor:default;
 }
 
-  @keyframes ebbubcoof {
-    0%{
-      color: red;
-      letter-spacing: 0.3em;
-    }
-    100%{
-      color: white;
-      letter-spacing: normal;
-    }
-  }
-
-  .ebbubc:hover{
-    animation: ebbubc 1s 1 ease-in-out;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes ebbubc {
-    0%{
-      color: white;
-    }
-    50%{
-      color: red;
-    }
-    100%{
-      letter-spacing: 0.3em;
-      color: red;
-    }
-  }
-
 .teaser{
   display: inline;
   position: absolute;
