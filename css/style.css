@@ -947,3 +947,25 @@ div.logo1 div.red {
     width: 80%;
   }
 }
+@media screen and (max-width:339px){
+  .nav-socials{
+    margin-right: -21em;
+  }
+  .nav-email{
+    margin-right: -5em;
+  }
+}
+@media screen and (max-width: 460px){
+  .bigteamimg{
+    max-width: 30em;
+  }
+  .eventsh{
+    font-size: 4em;
+  }
+  
+}
+@media screen and (max-width: 383px) {
+  .eventbtn2{
+    margin-left: 0;
+  }
+}
