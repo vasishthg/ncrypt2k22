@@ -47,8 +47,39 @@ body{
   vertical-align: middle;
   font-size: 3em;
   font-family: 'Red Hat Display', sans-serif;
+  animation: ebbubcoof 1s 1;
+  animation-fill-mode: forwards;
+  cursor:default;
 }
 
+  @keyframes ebbubcoof {
+    0%{
+      color: red;
+      letter-spacing: 0.3em;
+    }
+    100%{
+      color: white;
+      letter-spacing: normal;
+    }
+  }
+
+  .ebbubc:hover{
+    animation: ebbubc 1s 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes ebbubc {
+    0%{
+      color: white;
+    }
+    50%{
+      color: red;
+    }
+    100%{
+      letter-spacing: 0.3em;
+      color: red;
+    }
+  }
 
 .teaser{
   display: inline;
@@ -109,6 +140,17 @@ body{
   /* line-height: 2em; */
 }
 
+.navlinka:hover{
+  animation: lowbright 0.7s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes lowbright {
+  100%{
+    filter: brightness(60%);
+  }
+}
+
 #vid{
   position: absolute;
   top: 50%;
@@ -127,14 +169,34 @@ body{
   transform: translateX(-50%);
   position: absolute;
   bottom: 3em;
-  pointer-events: none;
-  user-select: none;
+  /* pointer-events: none;*/
+  user-select: none; 
+}
+
+.homelogo:hover{
+  animation: wooo 0.5s 1 ease-in-out;
+}
+
+@keyframes wooo {
+  0%{
+    transform: translateX(-50%);
+  }
+  25%{
+    transform: translateX(-58%);
+  }
+  50%{
+    transform: translateX(-42%);
+  }
 }
 
 #menu{
   z-index: 400;
   font-weight: 400;
   font-family: 'Red Hat Display', sans-serif;
+}
+
+#menu:hover{
+  color:red;
 }
 
 .sidenav{
@@ -150,7 +212,31 @@ body{
   z-index: 2;
   font-family: 'Red Hat Display', sans-serif;
   color: white;
+  font-weight: bold;
   overflow-y: hidden;
+}
+/*  style=" position: absolute; right: 5em; top: 7em; font-family: 'Red Hat Display', sans-serif; font-weight: 400; font-size: 1.7em;" */
+.nav-no{
+  float: right;
+  font-family: 'Red Hat Display', sans-serif;
+  position: absolute; right: 5em; top: 7em; font-family: 'Red Hat Display', sans-serif; font-weight: 400; font-size: 1.7em;
+  position: absolute;
+  color: white;
+}
+.nav-email{
+  position: absolute; right: 5em; top: 10em; font-family: 'Red Hat Display', sans-serif; font-weight: 600; font-size: 1.7em; text-decoration: underline 2px white; text-underline-offset: 0.2em;
+}
+/*  style=" position: absolute; right: 5em; bottom: 40em;" */
+.nav-socials{
+  position: absolute;
+  top: 22em;
+  right: 8em;
+}
+/* style="float: right; margin-right: -2em; position: absolute; right: 5em; bottom: 7em;" */
+.discord-widget{
+  position: absolute;
+  right:5em;
+  top:30em;
 }
 
 *:active{
@@ -224,6 +310,31 @@ font-size: 0.8em;
   background-color: transparent;
   font-family: 'Red Hat Display', sans-serif;
   border: solid 1px red;
+  animation: bordrroof 0.1s 1;
+  animation-fill-mode: forwards;
+}
+
+.eventbtn1:hover{
+  animation: bordrr 0.1s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bordrr {
+  0%{
+    border: solid 1px red;
+  }  
+  100%{
+    border: solid 4px red;
+  }
+}
+
+@keyframes bordrroof {
+  0%{
+    border: solid 4px red;
+  }
+  100%{
+    border: solid 1px red;
+  }
 }
 
 .eventbtn2{
@@ -234,6 +345,35 @@ font-size: 0.8em;
   font-weight: 800;
   margin-left: 2em;
   margin-top: 1em;
+  animation: btnglowoof 0.4s 1;
+  animation-fill-mode: forwards;
+}
+
+.eventbtn2:hover{
+  animation: btnglow 0.4s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes btnglow {
+  0%{
+    filter:drop-shadow(0 0 0rem red);
+    border-radius: 0;
+  }
+  100%{
+    filter:drop-shadow(0 0 0.9rem red);
+    border-radius: 1em;
+  }
+}
+
+@keyframes btnglowoof {
+  0%{
+    filter:drop-shadow(0 0 0.9rem red);
+    border-radius: 1em;
+  }
+  100%{
+    filter: drop-shadow(0 0 0rem red);
+    border-radius: 0;
+  }
 }
 
 .eventimg{
@@ -264,16 +404,24 @@ font-size: 0.8em;
 }
 
 .bigteamimgleft{
-  max-width: 40em;
+  max-width: 50em;
   float: left;
   margin-left: 2.7em;
 }
 
+.bigteamimgleft:hover{
+  transform: rotate(0.01turn);
+}
+
 .bigteamimgright{
-  max-width: 40em;
+  max-width: 50em;
   float: right;
   display: flex;
   margin-right: -8em;
+}
+
+.bigteamimgright:hover{
+  transform: rotate(-0.01turn);
 }
 
 #dirh{
@@ -288,11 +436,12 @@ color: white;
 margin-left: 2em;
 background-color: black;
 }
+  /* 
+  .bigteamimg{
+    user-select: none;
+    pointer-events: none;
+  } */
 
-.bigteamimg{
-  user-select: none;
-  pointer-events: none;
-}
 .dir{
   font-family: 'Red Hat Display', sans-serif;
   color: white;
@@ -300,9 +449,36 @@ background-color: black;
   display: inline-block;
 }
 
+@keyframes circleiroof {
+  0%{
+    border-radius: 20em;
+    margin-bottom: 1.5em;
+  }
+  100%{
+    border-radius: 1em;
+    margin-bottom: 0;
+  }
+}
+
 .dir-img{
   max-width: 30em;
   border-radius: 1em;
+  animation: circleiroof 0.5s 1;
+  animation-fill-mode: forwards;
+}
+.dir-img:hover{
+  animation: circleir 0.5s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes circleir {
+  0%{
+    border-radius: 1em;
+  }
+  100%{
+    border-radius: 20em;
+    margin-bottom: 1.5em;
+  }
 }
 
 .dir-name{
@@ -353,11 +529,19 @@ background-color: black;
   width: 25%;
   display: inline-block;
   margin-left: 5em;
+  
 }
 
 .lead-img{
   max-width: 25em;
+  animation: circleiroof 0.5s 1;
+  animation-fill-mode: forwards;
   border-radius: 1em;
+}
+
+.lead-img:hover{
+  animation: circleir 0.5s 1;
+  animation-fill-mode: forwards;
 }
 
 .lead-name{
@@ -399,13 +583,17 @@ background-color: black;
   margin-left: 1em;
 }
 
-
-
 .core-img{
   max-width: 25em;
   border-radius: 1em;
+  animation: circleiroof 1s 1;
+  animation-fill-mode: forwards;
 }
 
+.core-img:hover{
+  animation: circleir 1s 1;
+  animation-fill-mode: forwards;
+}
 .core-name{
   color: white;
   font-size: 2em;
@@ -610,4 +798,174 @@ div.logo1 div.red {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(215, 1, 1);
+}
+
+.schnice{
+  max-width: 60em;
+}
+
+/* RESPONSIVE */
+@media screen and ( max-height: 715px ) { 
+  .navlinks{
+    margin-top: -13em;
+  }
+}
+@media screen and (max-height: 607px) {
+  .navlinks{
+    margin-top: -20em;
+  }
+}
+@media screen and (max-height: 541px) {
+  .navlinks{
+    margin-top: -27em;
+  }
+}
+@media screen and (max-height: 477px) {
+  .navlinks{
+    margin-top: -34em;
+  }
+}
+@media screen and (max-width: 607px) {
+  .schnice{
+    max-width: 40em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .eventsh{
+    font-size: 6em;
+  }
+}
+@media screen and (max-width:1111px) {
+  .bigteamimgright{
+    margin-right: 0;
+  }
+}
+@media screen and (max-width:1215px) {
+  .navlinks{
+    margin-left: 34em;
+  }
+}
+@media screen and (max-width:766px) {
+  .navlinks{
+    transform: rotate(0);
+    width: 100%;
+    margin-top: 0.8em;
+    margin-left: 5em;
+  }
+  .sidenav{
+    overflow-y: scroll;
+  }
+  .discord-widget{
+    position: relative;
+    margin-top: 25em;
+  }
+  .nav-no{
+    position: relative;
+    /* align-items: center; */
+    float: right;
+  }
+  .nav-socials{
+    position: relative;
+    /* align-items: center; */
+    /* right: -1; */
+    /* margin-right: -6em; */
+    float: right;
+    
+  }
+  .nav-email{
+    position: relative;
+    /* margin-left:20em; */
+    align-items: center;
+    margin-right: -2em;
+    right: 0;
+    float: right;
+  }
+}
+@media screen and (max-height:682px) {
+  .discord-widget{
+    top: 2em;
+    right: 27em;
+  }
+}
+@media screen and (max-width:1084px) {
+  .discord-widget{
+    left: 7em;
+    position: relative;
+  }
+}
+@media screen and (max-width:1180px) {
+  .dir-img{
+    max-width: 20em;
+  }
+}
+@media screen and (max-width:1180px) {
+  .dir-img{
+    max-width: 20em;
+  }
+}
+@media screen and (max-width:808px) {
+  .dir{
+    position: relative;
+    margin-top: 2em;
+    display: block;
+    margin-left: 0;
+    width: 100%;
+  }
+  .lead{
+    position: relative;
+    margin-top: 2em;
+    margin-left: 0;
+    display: block;
+    width: 100%;
+  }
+  .core{
+    position: relative;
+    margin-top: 2em;
+    margin-left: 0;
+    display: block;
+    width: 100%;
+  }
+  #core-breakpoint{
+    margin-top: -3em;
+  }
+  .core-img{
+    max-width: 20em !important;
+  }
+}
+@media screen and (max-width:1124px){
+  .lead{
+    margin-right: 0em;
+  }
+  .lead-img{
+    max-width: 20em;
+  }
+}
+@media screen and (max-width:1218px){
+  .core-img{
+    max-width: 20em;
+  }
+}
+@media screen and (max-width:972px) {
+  .core-img{
+    max-width: 10em;
+  }
+}
+@media screen and(max-width:862px) {
+  .core{
+    position: relative;
+    margin-top: 2em;
+    display: block;
+    width: 100%;
+  }
+  .core-img{
+    max-width: 20em !important;
+  }
+  #core-breakpoint{
+    margin-top: -3em;
+  }
+}
+@media screen and (max-width: 552px) {
+  .bigteamimg{
+    max-width: 40em;
+  }
 }
