@@ -394,7 +394,6 @@ font-size: 0.8em;
   float: right;
   display: flex;
   margin-right: -8em;
-  
   animation: circleiroof 0.3s 1;
   animation-fill-mode: forwards;
 }
@@ -858,28 +857,33 @@ div.logo1 div.red {
     float: right;
   }
 }
+
 @media screen and (max-height:682px) {
   .discord-widget{
     top: 2em;
     right: 27em;
   }
 }
+
 @media screen and (max-width:1084px) {
   .discord-widget{
     left: 7em;
     position: relative;
   }
 }
+
 @media screen and (max-width:1180px) {
   .dir-img{
     max-width: 20em;
   }
 }
+
 @media screen and (max-width:1180px) {
   .dir-img{
     max-width: 20em;
   }
 }
+
 @media screen and (max-width:808px) {
   .dir{
     position: relative;
@@ -909,6 +913,7 @@ div.logo1 div.red {
     max-width: 20em !important;
   }
 }
+
 @media screen and (max-width:1124px){
   .lead{
     margin-right: 0em;
@@ -917,16 +922,19 @@ div.logo1 div.red {
     max-width: 20em;
   }
 }
+
 @media screen and (max-width:1218px){
   .core-img{
     max-width: 20em;
   }
 }
+
 @media screen and (max-width:972px) {
   .core-img{
     max-width: 10em;
   }
 }
+
 @media screen and(max-width:862px) {
   .core{
     position: relative;
@@ -941,21 +949,25 @@ div.logo1 div.red {
     margin-top: -3em;
   }
 }
+
 @media screen and (max-width: 552px) {
   .bigteamimg{
     max-width: 40em;
   }
 }
+
 @media screen and (max-width:540px){
   .nav-socials{
     margin-right:-6em;
   }
 }
+
 @media screen and (max-width:992px){
   .eventstxt{
     width: 80%;
   }
 }
+
 @media screen and (max-width:339px){
   .nav-socials{
     margin-right: -21em;
@@ -964,6 +976,7 @@ div.logo1 div.red {
     margin-right: -5em;
   }
 }
+
 @media screen and (max-width: 460px){
   .bigteamimg{
     max-width: 30em;
@@ -973,11 +986,13 @@ div.logo1 div.red {
   }
   
 }
+
 @media screen and (max-width: 383px) {
   .eventbtn2{
     margin-left: 0;
   }
 }
+
 @media screen and (max-width:1464px){
   .bigteamimgright{
     margin-right: 1em;
