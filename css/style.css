@@ -942,3 +942,8 @@ div.logo1 div.red {
     margin-right:-6em;
   }
 }
+@media screen and (max-width:992px){
+  .eventstxt{
+    width: 80%;
+  }
+}
