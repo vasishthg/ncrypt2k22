@@ -998,3 +998,12 @@ div.logo1 div.red {
     margin-right: 1em;
   }
 }
+
+.eventstopbg{
+  background:url('/resources/bigoverlay.png');
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
