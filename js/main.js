@@ -23,7 +23,8 @@ setTimeout(function(){
 // redirs
   // Discord Redirect
 $(".dclink").click(function(){
-  window.open("https://discord.io/nCrypt22")
+  // window.open("https://discord.io/nCrypt22")
+  window.open("/forbidden")
   event.preventDefault()
 })
 $(".dclink").css("cursor", "pointer")
