@@ -860,6 +860,13 @@ div.logo1 div.red {
 
 @media screen and (max-height:682px) {
   .discord-widget{
+    top: 27em;
+    right: 27em;
+  }
+}
+
+@media screen and (max-width:1377px) {
+  .discord-widget{
     top: 2em;
     right: 27em;
   }
@@ -1016,4 +1023,17 @@ div.logo1 div.red {
   color: white;
   font-size: 10em;
   display: flexbox;
+}
+
+@media screen and (max-width:970px) {
+  .vidvid{
+    max-width: 16em;
+    max-height: 9em;
+  }
+}
+@media screen and (max-width:807px) {
+  .vidvid{
+    max-width: 12em;
+    max-height: 6em;
+  }
 }
