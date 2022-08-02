@@ -1037,3 +1037,12 @@ div.logo1 div.red {
     max-height: 6em;
   }
 }
+
+@media screen and (max-width:1366px) {
+  .discord-widget{
+    right: 12em;
+    top: auto;
+    bottom: 5em;
+    height: 26em;
+  }
+}
