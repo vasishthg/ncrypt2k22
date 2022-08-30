@@ -120,5 +120,5 @@ $("#teamsidebar").click(function(){
   window.location.replace("/team")
 })
 $("#dcryptsidebar").click(function(){
-  window.open("https://dcrypt.ga")
+  window.open("https://dcrypt22.pythonanywhere.com")
 })
