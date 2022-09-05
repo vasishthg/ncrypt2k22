@@ -4,18 +4,554 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nCrypt - We Will be back soon!</title>
+    <title id="web-title">nCrypt - Home</title>
+    <link rel="shortcut icon" href="resources/favn.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <meta name="theme-color" content="#FF0000">
+    <meta name="title" content="nCrypt">
+    <meta name="description" content="nCrypt, the technology club of DPS Sushant Lok, is defined by a passion for technology and driven by curiosity. Intellectual debates, quest for knowledge and a willingness to redefine everything, are the pillars of the club known as nCrypt.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ncrypt.net.in/">
+    <meta property="og:title" content="nCrypt">
+    <meta property="og:description" content="nCrypt, the technology club of DPS Sushant Lok, is defined by a passion for technology and driven by curiosity. Intellectual debates, quest for knowledge and a willingness to redefine everything, are the pillars of the club known as nCrypt.">
+    <meta property="og:image" content="resources/logo.png">
+
+
 </head>
 <body>
-    <style>
-        body{
-            background-color: black;
-            color: white;
-            letter-spacing: 0.02em;
-            font-weight: bold;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        </style>
-        ncrypt.net.in will be back soon!
+    <div id="overlay" onclick="off()">
+        <div id="vid"><iframe width="964" allow="autoplay;" autoplay="1" height="542" src="https://www.youtube.com/embed/Cm1kHOuvHo8?enablejsapi=1&autoplay='1'" title="nCrypt Intra '22" frameborder="0" allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
+    <p id="menubtn">Menu</p>
+    <div class="menu">
+        <div class="menu-top">
+            <img src="resources/logo.png" class="menu-logo" alt="">
+        </div>
+        <div class="menu-links">
+            <p id="to-home" class="menu-link hvr-underline-from-left">HOME</p>
+            <p id="to-events" class="menu-link hvr-underline-from-left">EVENTS</p>
+            <p id="to-team" class="menu-link hvr-underline-from-left">TEAM</p>
+            <p id="to-alumini" class="menu-link hvr-underline-from-left">ALUMINI</p>
+        </div>
+        <div class="menu-info">
+            <a href="tel:9999398936" class="menu-no hvr-sweep-to-right">999-939-8936</a><br><br>
+            <a href="mailto:ncryptdpssushantlok@gmail.com" class="menu-no hvr-underline-from-left" style="border-radius: 0;">ncryptdpssushantlok@gmail.com</a>
+            <br><br><br>
+            <div class="menu-social redir-discord">
+                <img src="resources/discord.svg" alt="">
+            </div>
+            <div class="menu-social redir-fb">
+                <img src="resources/fb.svg" alt="">
+            </div>
+            <div class="menu-social redir-insta">
+                <img src="resources/insta.svg" alt="">
+            </div>
+            <br><br><br><hr>
+            <div class="updates">
+                <h2>UPDATES</h2>
+                <p style="color: grey;">No Updates Right Now :)</p>
+                <!-- <div class="update">
+                    <p class="update-date">3 <br>Sept</p>
+                    <p class="update-title">Lorem Ipsum Sit Dolor Amet</p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="hero ">
+        <video src="resources/video.mp4" autoplay loop muted class="hero-video"></video>
+        <h2 class="ebbubc">Elite By Birth, <br> Unhinged By Choice</h2>
+        <div class="trailer"><p class="wtt">Watch The Teaser</p><h3 id="wtch" class="wtch">WATCH <img src="resources/watch.svg" class="wtch-img" alt=""></h3><div class="prog"></div></div>
+    </div>
+    <div class="sidenav">
+        <img src="resources/discord.svg" class="sidenav-img redir-discord" alt=""><br>
+        <img src="resources/fb.svg" class="sidenav-img redir-fb" alt=""><br>
+        <img src="resources/insta.svg" class="sidenav-img redir-insta" alt="">
+    </div>
+    <p id="welcome">Welcome</p>
+    <!-- <div class="sponsors">
+        <p class="wtt">Sponsors</p>
+        <div class="sponsors-carousel">
+            <h3 id="sponsor-name">Name1</h3>
+            <div class="carousel-btn active" id="btn1"></div>
+            <div class="carousel-btn" id="btn2"></div>
+            <div class="carousel-btn" id="btn3"></div>
+            <div class="carousel-btn" id="btn4"></div>
+        </div>
+    </div> -->
+    <p class="plug">By <img class="plug-logo" src="resources/logo.png"></p>
+    <p class="plug" style="font-size: 0.0001em; font-family: 'gilroy-100'; bottom: 0.01em; color: red;">ThatsNoBad</p>
+    <div class="events">
+        <center><h1 class="bigtitle">EVENT<span style="letter-spacing: 0;">S</span></h1></center>
+        <center>
+        <div class="allevents">
+            <div class="event">
+                <img src="resources/events/3d.png" class="event-img" alt="">
+                <div class="event-info">
+                    <h3 class="event-title">3D Modelling</h3>
+                    <p class="event-desc">Visualise a problem statement in 3D. The possibilites are endless. Creativity has no limit. 1 Winner, Can it be you?</p>
+                    <br>
+                    <a href="https://docs.google.com/document/d/1YdjaSBVCDrIXgUaS_BciA2dhXVu-ID6W5NziVo_MvK4/" style="color: white; text-decoration: none;"><button class="eventbtn2 eventbtn">Prompt</button></a>
+                </div>
+            </div>
+            <div class="event">
+                <img src="resources/events/arduino.png" class="event-img" alt="">
+                <div class="event-info">
+                    <h3 class="event-title">Arduino</h3>
+                    <p class="event-desc">Possible through Arduino - Automation, Smart devices, Cloud and much more. Make the use of this wonderful language to make a wonderful product. 1 Winner, Can it be you?</p>
+                    <br>
+                    <a href="https://docs.google.com/document/d/1CF9lo0Gnt9naw-9z3kOaPwsNgSYcEBox8E0NHsSR10E" style="color: white; text-decoration: none;"><button class="eventbtn2 eventbtn">Prompt</button></a>
+                </div>
+            </div>
+            <div class="event">
+                <img src="resources/events/audiomixing.png" class="event-img" alt="">
+                <div class="event-info">
+                    <h3 class="event-title">Audio Mixing</h3>
+                    <p class="event-desc">The world of music is vast, make use of it and make the most stunning beat ever. 1 Winner, Can it be you?</p>
+                    <br>
+                    <a href="https://docs.google.com/document/d/1ghlXYIqVNbF9_BL12l-k6GDKbv-N61YfVXNWu3fnB5s" style="color: white; text-decoration: none;"><button class="eventbtn2 eventbtn">Prompt</button></a>
+                </div>
+            </div>
+            <div class="event">
+                <img src="resources/events/dcrypt.png" class="event-img" alt="">
+                <div class="event-info">
+                    <h3 class="event-title">dCrypt</h3>
+                    <p class="event-desc">To live, is to ⁣suffer, but to survive is ⁢⁣‌⁢⁡⁢⁡⁢‍⁡‍⁡‌⁢‌⁣⁤‌‌⁤⁢⁡⁢‍⁤⁡⁢‌⁤⁢‍‌‌⁢‍‌‌⁤⁡‌⁣⁣⁤⁡⁢‍‌⁡⁣⁣‍⁡⁣⁡⁢⁤⁢⁤⁣⁢⁢‍⁡‍⁢⁢⁤⁢‌‌⁢‌⁢‍‌‌‌⁢⁢⁡‍⁢⁣⁡⁣‌⁤⁢‍⁢⁢⁢‍⁡‍⁢⁢‌⁡⁢⁡⁢‍⁢⁡‌‌‌‌‌to find the meaning of the suffering
+                        <br>A 48 hour cryptic hunt. Hunt the internet to solve the questions with the clues given and your out of the box thinking to come out on top. 1 winner,
+                        Can it be you?<br></p>
+                    <br>
+                    <a href="https://docs.google.com/document/d/1HH7SsIM3015It6TI-yrL_2kWlhraSSdmylFOaUE_m-E" style="color: white; text-decoration: none;"><button class="eventbtn1 eventbtn">Learning Resources</button></a>
+                    <a href="https://docs.google.com/document/d/1Kya290rTp12IDLCHY4pUtAlh3V3a6nxDMFgH35DaFw0" style="color: white; text-decoration: none;"><button class="eventbtn2 eventbtn">Prompt</button></a>
+                </div>
+            </div>
+            <div class="event">
+                <img src="resources/events/design.png" class="event-img" alt="">
+                <div class="event-info">
+                    <h3 class="event-title">Design</h3>
+                    <p class="event-desc">Every great design begins with a great story. Think with your creativity, Design with your skills. 6 teams. 1 Winner, Can it be you?</p>
+                    <br>
+                    <a href="https://docs.google.com/document/d/1jo7rNSbnz6fefhG61g2g9tpz6OY5P9PQrzjk8Qf0PJY/" style="color: white; text-decoration: none;"><button class="eventbtn2 eventbtn">Prompt</button></a>
+                </div>
+            </div>
+            <div class="event">
+                <img src="resources/events/filmmaking.png" class="event-img" alt="">
+                <div class="event-info">
+                    <h3 class="event-title">Film Making</h3>
+                    <p class="event-desc">Film Making is a way of telling a story. Be it Thriller, Romance or Comedy (minus the cringe). Moving pictures or the capture of time, cool. 1 Winner, Can it be you?</p>
+                    <br>
+                    <a href="https://docs.google.com/document/d/1jo7rNSbnz6fefhG61g2g9tpz6OY5P9PQrzjk8Qf0PJY/" style="color: white; text-decoration: none;"><button class="eventbtn2 eventbtn">Prompt</button></a>
+                </div>
+            </div>
+            <div class="event">
+                <img src="resources/events/gaming.png" class="event-img" alt="">
+                <div class="event-info">
+                    <h3 class="event-title">Gaming</h3>
+                    <p class="event-desc">Go head to head with teams and get dubs to progress further and then, the final battle.<br>3 Rounds. 24 Particpants. 6 Teams. 1 Winner, Can it be you?</p>
+                    <br>
+                    <a href="https://docs.google.com/document/d/1Vpp7cPoHUyBP_J-sx2tf1n0zXRxTTnEy4QHd4rAH3a0" style="color: white; text-decoration: none;"><button class="eventbtn2 eventbtn">Prompt</button></a>
+                </div>
+            </div>
+            <div class="event">
+                <img src="resources/events/gd.png" class="event-img" alt="">
+                <div class="event-info">
+                    <h3 class="event-title">Group Discussion</h3>
+                    <p class="event-desc">A group disscussion for a topic given on the spot. Let victory be thou aim. Do you have what it takes to be the crowned winner?</p>
+                    <br>
+                    <a href="https://drive.google.com/file/d/1MAr-lIsBH1a3U2cPW4lsU64LvBSMpPFe/view?usp=sharing" style="color: white; text-decoration: none;"><button class="eventbtn1 eventbtn">Learning Resources</button></a>
+                </div>
+            </div>
+            <div class="event">
+                <img src="resources/events/minecraft.png" class="event-img" alt="">
+                <div class="event-info">
+                    <h3 class="event-title">Minecraft</h3>
+                    <p class="event-desc">Devised a test where challengers must survive thrive and reach the final level to battle it out for a chance to be the crowned victor. It will not be easy and will require the challengers to be skilled in everything minecraft. 1 Winner, Can it be you?</p>
+                    <br>
+                    <a href="https://docs.google.com/document/d/1ffRqQDaeKsmVYf59FangdvBVGpuHz4Z8LT_XDpmqTMM" style="color: white; text-decoration: none;"><button class="eventbtn2 eventbtn">Prompt</button></a>
+                </div>
+            </div>
+            <div class="event">
+                <img src="resources/events/photography.png" class="event-img" alt="">
+                <div class="event-info">
+                    <h3 class="event-title">Photography</h3>
+                    <p class="event-desc">Capture the best moments in your camera. Explore the unexplored. 1 Winner, Can it be you?</p>
+                    <br>
+                    <a href="https://docs.google.com/document/d/1ZMdgcqFFreT6HShaiGcqmirvKDG82tee2bMsXvHJpOw" style="color: white; text-decoration: none;"><button class="eventbtn2 eventbtn">Prompt</button></a>
+                </div>
+            </div>
+            <div class="event">
+                <img src="resources/events/quiz.png" class="event-img" alt="">
+                <div class="event-info">
+                    <h3 class="event-title">Quiz & Crossword</h3>
+                    <p class="event-desc">A quiz is a huge event where students representing different houses and schools compete against each other in a battle of wits. Do you have what it takes to be crowned the winner?</p>
+                    <br>
+                    <a href="https://docs.google.com/document/d/1pmtc3H9qXb6Wb2bsiFHU4KxJn4jHOW6U" style="color: white; text-decoration: none;"><button class="eventbtn1 eventbtn">Learning Resources</button></a>
+                    <a href="https://docs.google.com/document/d/1PbIe3RomsvpYQUBeDKzhSDDmnA9Rympk520H81A4tUE" style="color: white; text-decoration: none;"><button class="eventbtn2 eventbtn">Prompt</button></a>
+                </div>
+            </div>
+            <div class="event">
+                <img src="resources/events/robowars.png" class="event-img" alt="">
+                <div class="event-info">
+                    <h3 class="event-title">Robowars</h3>
+                    <p class="event-desc">Bring the best robots to war with amazing control. Master the skill of just being awesome. Do you have what it takes to be the crowned winner?</p>
+                    <br>
+                    <a href="https://docs.google.com/document/d/1M2Gd85JTAjmda8C77oY1yRi6nGRdnAjFfE9qYOQiWSU/" style="color: white; text-decoration: none;"><button class="eventbtn2 eventbtn">Prompt</button></a>
+                </div>
+            </div>
+            <div class="event">
+                <img src="resources/events/webd.png" class="event-img" alt="">
+                <div class="event-info">
+                    <h3 class="event-title">Web Development</h3>
+                    <p class="event-desc">Take advantage of the latest modern technologies to build amazing web experiences for everyone. Make a moment a lasting conveyable memory through your website. 1 Winner, Can it be you?</p>
+                    <br>
+                    <a href="https://docs.google.com/document/d/1Hr9bBvrvjHGGx2As3bJwNrkofeAdBHQlZziQxim_lR8/" style="color: white; text-decoration: none;"><button class="eventbtn2 eventbtn">Prompt</button></a>
+                </div>
+            </div>
+            <img class="plug-logo" src="resources/logo.png">
+        </div>
+        </center>
+    </div> 
+    <div class="team">
+        <center><h1 class="bigtitle">TEA<span style="letter-spacing: 0;">M</span></h1></center>
+        <div class="allteam">
+            <div class="bigteam">
+                <br><br>
+                <div style="width: 100%;" data-aos="fade-right"><img src="resources/team/aditya_dey.svg" class="bigteam-img" alt=""></div><br><br><br>
+                <div style="width: 100%;" data-aos="fade-left" ><img src="resources/team/yash_thapliyal.svg" style="float: right;" class="bigteam-img" alt=""></div><br><br><br>
+                <div style="width: 100%;" data-aos="fade-right" ><img src="resources/team/vasu_goyal.svg" class="bigteam-img" alt=""></div><br><br><br>
+                <div style="width: 100%;" data-aos="fade-left" ><img src="resources/team/arvee.svg" style="float: right;" class="bigteam-img" alt=""></div><br><br>
+            </div>
+            <div class="directors" data-aos="fade-down" data-aos-offset="500">
+                <h1 class="team-pos">DIRECTORS</h1>
+                <center>
+                <div class="members">
+                    <div class="member-dirlea">
+                        <img src="resources/team/ayush_dixit.svg" class="member-dirlea-img" alt="">
+                        <h3 class="member-dirlea-name">Ayush Dixit</h3>
+                        <h3 class="member-dirlea-pos">Director</h3>
+                        <h3 class="member-dirlea-field">Photography</h3>
+                    </div>
+                    <div class="member-dirlea">
+                        <img src="resources/team/panipuri.svg" class="member-dirlea-img" alt="">
+                        <h3 class="member-dirlea-name">Aaryan Panigrahi</h3>
+                        <h3 class="member-dirlea-pos">Director</h3>
+                        <h3 class="member-dirlea-field">Film Making</h3>
+                    </div>
+                    <div class="member-dirlea">
+                        <img src="resources/team/prayas_gupta.svg" class="member-dirlea-img" alt="">
+                        <h3 class="member-dirlea-name">Prayas Gupta</h3>
+                        <h3 class="member-dirlea-pos">Director</h3>
+                        <h3 class="member-dirlea-field">Group Discussion</h3>
+                    </div>
+                </div>
+                </center>
+            </div>
+            <br>
+            <div class="directors" data-aos="fade-left" data-aos-offset="500">
+                <h1 class="team-pos" style="float: right; text-align: right; padding-right: 2em;">LEADS</h1>
+                <center>
+                <div class="members">
+                    <div class="member-dirlea">
+                        <img src="resources/team/exceed.svg" class="member-dirlea-img" alt="">
+                        <h3 class="member-dirlea-name">Chaitanya Bajaj</h3>
+                        <h3 class="member-dirlea-pos">Gaming</h3>
+                    </div>
+                    <div class="member-dirlea">
+                        <img src="resources/team/samarth_saluja.svg" class="member-dirlea-img" alt="">
+                        <h3 class="member-dirlea-name">Samarth Saluja</h3>
+                        <h3 class="member-dirlea-pos">3D/Design</h3>
+                    </div>
+                    <div class="member-dirlea">
+                        <img src="resources/team/aaryan_parveen.svg" class="member-dirlea-img" alt="">
+                        <h3 class="member-dirlea-name">Aaryan Parveen</h3>
+                        <h3 class="member-dirlea-pos">dCrypt</h3>
+                    </div>
+                </div>
+                </center>
+            </div>
+            <br>
+            <div class="directors" data-aos="fade-up" data-aos-offset="500">
+                <center>
+                <h1 class="team-pos" style="margin-left: 0;">CORE</h1>
+                <div class="members">
+                    <div class="member-core">
+                        <img src="resources/team/ananya_p_mani.svg" class="member-core-img" alt="">
+                        <h3 class="member-core-name">Ananya P. Mani</h3>
+                        <h3 class="member-core-pos">Film Making</h3>
+                    </div>
+                    <div class="member-core">
+                        <img src="resources/team/vivika_bansal.svg" class="member-core-img" alt="">
+                        <h3 class="member-core-name">Vivika Bansal</h3>
+                        <h3 class="member-core-pos">UI/UX</h3>
+                    </div>
+                    <div class="member-core">
+                        <img src="resources/team/sashwat_dhanuka.svg" class="member-core-img" alt="">
+                        <h3 class="member-core-name">Sashwat Dhanuka</h3>
+                        <h3 class="member-core-pos">Group Discussion</h3>
+                    </div>
+                    <div class="member-core">
+                        <img src="resources/team/bharat_sharama.svg" class="member-core-img" alt="">
+                        <h3 class="member-core-name">Bharat Sharma</h3>
+                        <h3 class="member-core-pos">Group Discussion</h3>
+                    </div>
+                    <br><br>
+                    <div class="member-core">
+                        <img src="resources/team/vanshdeep.svg" class="member-core-img" alt="">
+                        <h3 class="member-core-name">Vanshdeep Trivedi</h3>
+                        <h3 class="member-core-pos">Creative</h3>
+                    </div>
+                    <div class="member-core">
+                        <img src="resources/team/vasishth_gupta.svg" class="member-core-img" alt="">
+                        <h3 class="member-core-name">Vasishth Gupta</h3>
+                        <h3 class="member-core-pos">Web Dev</h3>
+                    </div>
+                    <div class="member-core">
+                        <img src="resources/team/aricia_guha.svg" class="member-core-img" alt="">
+                        <h3 class="member-core-name">Aricia Guha</h3>
+                        <h3 class="member-core-pos">Photography</h3>
+                    </div>
+                    <div class="member-core">
+                        <img src="resources/team/mehul_raina.svg" class="member-core-img" alt="">
+                        <h3 class="member-core-name">Mehul Raina</h3>
+                        <h3 class="member-core-pos">Gaming</h3>
+                    </div>
+                </div>
+            <img class="plug-logo" src="resources/logo.png">
+                
+                </center>
+            </div>
+        </div>
+    </div>
+    <div class="thegod-anim">
+        <audio src="resources/holy.mp3" autoplay id="jod-audio" hidden loop></audio>
+        <center>
+        <div class="alum thegod" style="cursor: pointer;">
+            <p class="alum-name">Keshav Kumar</h3>
+                <p class="alum-pos">Web Development</p>
+            </div>
+           <p class="bowdown">Everybody bow down to da Keshav Kumar AKA Wusername 🛐</p></center>
+        <center><p style="color: grey;">The best mentor there could ever be :). luv u keshav bhaiya</p></center>
+        <p id="thegod-audio" alt="">Close</p>
+
+    </div>
+    <div class="alumini">
+        <center><h1 class="bigtitle">ALUMIN<span style="letter-spacing: 0;">I</span></h1></center>
+        <div class="all-alumini">
+            <h3 class="alum-yr">TEAM '21</h3>
+            <div class="alum" style="cursor: pointer;" id="thegod">
+                <p class="alum-name">Keshav Kumar</h3>
+                <p class="alum-pos">Web Development</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Simarpreet Singh</h3>
+                <p class="alum-pos">Photography</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Keshav Rao</h3>
+                <p class="alum-pos">Design</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Siddhant Bannerjee</h3>
+                <p class="alum-pos">Gaming</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Arya Lokhande</h3>
+                <p class="alum-pos">Programming</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Kumarshresth Shukla</h3>
+                <p class="alum-pos">Film Making</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Aarush Aikat</h3>
+                <p class="alum-pos">Film Making</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Chirag Thakur</h3>
+                <p class="alum-pos">Group Discussion</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Bhuvan Yadav</h3>
+                <p class="alum-pos">Prez</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Yash Hajela</h3>
+                <p class="alum-pos">Secretary</p>
+            </div>
+            <br><br>
+            <h3 class="alum-yr">TEAM '20</h3>
+            <div class="alum">
+                <p class="alum-name">Achintya Pradhan</h3>
+                <p class="alum-pos">Member</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Bhavika Bhaitia</h3>
+                <p class="alum-pos">Member</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Yash Dhingra</h3>
+                <p class="alum-pos">Member</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Manav Garg</h3>
+                <p class="alum-pos">Member</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Aditya Menon</h3>
+                <p class="alum-pos">Member</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Satvik Prasad</h3>
+                <p class="alum-pos">Member</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Aditya Varma</h3>
+                <p class="alum-pos">Member</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Vinayak Taneja</h3>
+                <p class="alum-pos">Member</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Medha Tripathy</h3>
+                <p class="alum-pos">Member</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Aryan Singh</h3>
+                <p class="alum-pos">Quiz</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Divyansh Singh</h3>
+                <p class="alum-pos">Creative</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Prerit Rana</h3>
+                <p class="alum-pos">Programming</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Aditya Tripathi</h3>
+                <p class="alum-pos">Gaming</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Abhinav Srivastava</h3>
+                <p class="alum-pos">Creative</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Saksham Tandon</h3>
+                <p class="alum-pos">Group Discussion</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Samriddhi Jain</h3>
+                <p class="alum-pos">Photography</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Saksham Maurya</h3>
+                <p class="alum-pos">Film Making</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Prathmesh Mackeja</h3>
+                <p class="alum-pos">Secretary</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Dhruv Baronia</h3>
+                <p class="alum-pos">Prez</p>
+            </div>
+            <br><br>
+            <h3 class="alum-yr">TEAM '19</h3>
+            <div class="alum" id="thegod">
+                <p class="alum-name">Saanvi Goyal</h3>
+                <p class="alum-pos">Member</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Shuchi Jhingan</h3>
+                <p class="alum-pos">Member</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Mahira gupta</h3>
+                <p class="alum-pos">Member</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Samyak Jain</h3>
+                <p class="alum-pos">Member</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Prakhar Pandey</h3>
+                <p class="alum-pos">Member</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Garv Sethi</h3>
+                <p class="alum-pos">Member</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Satvik Vir</h3>
+                <p class="alum-pos">Member</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Ananay Malhotra</h3>
+                <p class="alum-pos">Member</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Arnav Sharma</h3>
+                <p class="alum-pos">Member</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Aditya Kalra</h3>
+                <p class="alum-pos">Member</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Chaintanya Kapoor</h3>
+                <p class="alum-pos">Member</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Abhishanka Saha</h3>
+                <p class="alum-pos">Member</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Prabuddh Jha</h3>
+                <p class="alum-pos">Secretary</p>
+            </div>
+            <div class="alum">
+                <p class="alum-name">Bhavye Thukral</h3>
+                <p class="alum-pos">Prez</p>
+            </div>
+            <br><br>
+        </div>
+    </div>
+    <div class="loader se-pre-con">
+		<div class="logo1">
+		  <div class="red"></div>
+		  <div class="orange"></div>
+		  <div class="red2"></div>
+
+		</div>
+	  </div>
 </body>
 </html>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/confetti.js"></script>
+<script src="js/main.js"></script>
+<script>
+    jQuery(document).ready(function ($) {
+    $(window).load(function () {
+        setTimeout(function(){
+            $('.loader').fadeOut('slow', function () {
+            });
+        },2000);
+    });
+});
+
+setTimeout(function(){
+  $('.loader').fadeOut('slow', function(){
+    $('body').css({
+      'overflow-y': 'auto'
+    });
+  });
+},2000);
+</script>
