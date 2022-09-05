@@ -139,6 +139,10 @@ $("#thegod-audio").click(function(){
     },1000)
 })
 
+window.oncontextmenu = function () {
+  return false;
+}
+
 $(document).keydown(function (event) {
     if (event.keyCode == 123) {
         return false;
