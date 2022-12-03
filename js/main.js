@@ -62,7 +62,7 @@ $("#btn4").click(function(){
 })
 
 $(".redir-discord").click(function(){
-    window.open("https://discord.gg/YbV69vuw8V")
+    window.open("https://discord.gg/DeRyZhSva7")
 })
 
 $(".redir-insta").click(function(){
