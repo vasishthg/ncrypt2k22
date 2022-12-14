@@ -84,6 +84,15 @@ $("#to-events").click(function(){
     mentxt.innerHTML = "Menu";
 })
 
+function toEvents(){
+    title.innerHTML = "nCrypt - Events";
+    $(".events").show()
+    $(".team").hide()
+    $(".alumini").hide()
+    $(".menu").slideToggle()
+    mentxt.innerHTML = "Menu";
+}
+
 $("#to-home").click(function(){
     title.innerHTML = "nCrypt - Home";
     $(".events").hide()
