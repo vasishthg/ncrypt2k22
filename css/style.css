@@ -910,7 +910,118 @@ canvas {
 /*------------------------------------*\
 	Preloader
 \*------------------------------------*/
-div.loader {
+
+.loader{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99999999;
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.loader-line{
+    background: white;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    width: 5em;
+    margin-right: 3em;
+}
+
+.loader-lines{
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    top: 50%;
+    display: flex;
+    transform: translate(-50%, -50%);
+}
+
+.loader-tdiv{
+    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    width: 15em;
+    height: 15em;
+}
+
+.loader-txt{
+    font-size: 3em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    transform: translate(-50%, -50%);
+    line-height: 0;
+}
+
+.title{
+    font-family: 'august';
+    color: red;
+    font-size: 3em;
+    margin-left: .75em;
+    margin-top: 1em;
+}
+
+.landing-main{
+    position: absolute;
+    margin-top: 2em;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.landing-skills{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3em;
+}
+
+.landing-skill{
+    color: white;
+    cursor: pointer;
+    font-family: 'sathoshi-bold';
+    font-size: 3.2em;
+    margin-block-end: 0;
+    margin-block-start: .25em;
+    animation: lsrev 0.25s 1 forwards;
+}
+
+.landing-skill:hover{
+    animation: ls 0.5s 1 forwards;
+}
+
+@keyframes ls {
+    100%{
+        letter-spacing: 0.1em;
+        color: red;
+    }
+}
+
+@keyframes lsrev {
+    0%{
+        letter-spacing: 0.1em;
+        color: red;
+    }
+    100%{
+        letter-spacing: 0;
+        color: white;
+    }
+}
+/* div.loader {
     position: fixed;
     top: 0;
     left: 0;
@@ -932,13 +1043,12 @@ div.loader {
     font-size: 28px;
     font-family: "Montserrat";
   }
-  
+*/
   div.logo1 {
     width: 130px;
     height: 130px;
     box-sizing: border-box;
     position: relative;
-    background-color: black;
   }
   div.logo1::before,
   div.logo1::after {
@@ -1048,7 +1158,7 @@ div.loader {
       opacity: 1;
       width: 20%;
     }
-  }
+  } 
 
 @media screen and (max-width: 1521px) {
     .trailer{
