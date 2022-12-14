@@ -112,7 +112,7 @@ $("#to-team").click(function(){
 })
 
 $("#to-alumini").click(function(){
-    title.innerHTML = "nCrypt - Alumini";
+    title.innerHTML = "nCrypt - Alumni";
     $(".events").hide()
     $(".team").hide()
     $(".alumini").show()
